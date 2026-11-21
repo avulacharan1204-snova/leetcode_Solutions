@@ -8,9 +8,9 @@ class Solution:
             while s[right] in seen:
                 seen.remove(s[start])
                 start+=1
+            
             seen.add(s[right])
             maxLen = max(right-start+1,maxLen)
-        
         return maxLen
 
 
